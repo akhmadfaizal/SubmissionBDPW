@@ -1,0 +1,304 @@
+/* Font */
+@font-face {
+    src: url(../font/EASPORTS15.ttf);
+    font-family: 'EASPORTS15';
+}
+
+@font-face {
+    src: url(../font/DINPro.otf);
+    src: url(../font/DINPro-Light.otf);
+    src: url(../font/DINPro-Medium.otf);
+    src: url(../font/DINPro-Bold.otf);
+    font-family: 'DINPro';
+}
+
+/* Colors */
+/* First Color F02653 */
+/* Second Color F95667 */
+/* Third Color 431833*/
+
+
+/*  Default Styling   */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DINPro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: 'EASPORTS15';
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #F02653;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #431833;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    display: inline;
+
+}
+
+.home {
+    font-size: 20px;
+    padding: 60px;
+    place-content: center;
+    text-align: center;
+    color: white;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/fifa20.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.home h1 {
+    font-size: 70px;
+}
+
+.home p {
+    font-size: 30px;
+}
+
+.text-box {
+    margin-top: 12%;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    background-color: #FFF;
+    justify-content: flex-start;
+    place-content: center;
+    position: sticky;
+    top: 0;
+    -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+    -moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+    box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+}
+
+.logo {
+    height: 20px;
+    background-color: blue;
+
+}
+
+nav a {
+    font-family: 'EASPORTS15';
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+
+
+/* Buttons */
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #F02653;
+    border: 1px solid #F02653;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: #F02653;
+    border: 1px solid #F02653;
+    margin-right: 15px;
+}
+
+
+.btn:hover,
+.btn:active {
+    background-color: #F95667;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #F95667;
+    border: 1px solid #F95667;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+    border: 1px solid #F95667;
+}
+
+/* Main */
+main {
+    overflow: auto;
+    padding: 0;
+}
+
+#content {
+    width: 100%;
+}
+
+.viewallteam {
+    text-align: right;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.title-young-player,
+.title-team,
+.aboutme {
+    text-align: center;
+    padding: 24px 0;
+}
+
+section {
+    padding: 50px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+section a {
+    position: relative;
+}
+
+.player,
+.team {
+    margin: 20px;
+}
+
+.player p,
+.team h3 {
+    color: #F95667;
+}
+
+/* image */
+img {
+    height: 200px;
+}
+
+.team {
+    text-align: center;
+}
+
+.team img {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+article img {
+    margin-top: 20px;
+}
+
+/* Card View*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Aside */
+aside {
+    width: 100%;
+    background-color: #F02653;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+aside article {
+    width: 25%;
+    background-color: #fff;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.about h3 {
+    margin-top: 10px;
+    background-color: #F95667;
+    padding: 10px;
+    color: #FFF;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.about img {
+    /* height: 150px; */
+    border-radius: 20%;
+}
+
+/* Media */
+@media screen and (max-width : 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .btn {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-right: 15px;
+    }
+
+    section {
+        display: block;
+        text-align: center;
+    }
+
+    aside article {
+        width: 50%;
+        background-color: #fff;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+
+}
